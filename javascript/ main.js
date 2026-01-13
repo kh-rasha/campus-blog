@@ -1,10 +1,10 @@
-// js/main.js
+// javascript/main.js
 import { posts } from "./data.js";
 
 const postsSection = document.querySelector("#posts");
 
 if (!postsSection) {
-    throw new Error("Element #posts not found in index.html");
+    throw new Error('Element with id="posts" not found in index.html');
 }
 
 postsSection.innerHTML = posts
