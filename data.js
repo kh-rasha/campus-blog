@@ -34,5 +34,5 @@ export const posts = [
         views: 180
     },
 
-    // 👉 Add at least 6 more posts (same structure)
+
 ];
