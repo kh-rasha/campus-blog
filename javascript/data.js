@@ -16,7 +16,7 @@ export const posts = [
         author: "Campus Blog Team",
         date: "2026-01-05",
         category: "Study",
-        image: "images/image1.png",
+        image: "images/news.jpg",
         views: 220
     },
     {
@@ -30,7 +30,7 @@ export const posts = [
         author: "Campus Blog Team",
         date: "2026-01-06",
         category: "Frontend",
-        image: "images/image1.png",
+        image: "images/news.jpg",
         views: 180
     },
     {
@@ -45,7 +45,7 @@ export const posts = [
         author: "Campus Blog Team",
         date: "2026-01-07",
         category: "JavaScript",
-        image: "images/image1.png",
+        image: "images/news.jpg",
         views: 310
     },
     {
@@ -60,7 +60,7 @@ export const posts = [
         author: "Campus Blog Team",
         date: "2026-01-08",
         category: "Accessibility",
-        image: "images/image1.png",
+        image: "images/news.jpg",
         views: 190
     },
     {
@@ -75,7 +75,7 @@ export const posts = [
         author: "Campus Blog Team",
         date: "2026-01-09",
         category: "JavaScript",
-        image: "images/image1.png",
+        image: "images/news.jpg",
         views: 420
     },
     {
@@ -90,7 +90,7 @@ export const posts = [
         author: "Campus Blog Team",
         date: "2026-01-10",
         category: "Frontend",
-        image: "images/image1.png",
+        image: "images/news.jpg",
         views: 260
     },
     {
@@ -105,7 +105,7 @@ export const posts = [
         author: "Campus Blog Team",
         date: "2026-01-11",
         category: "Git",
-        image: "images/image1.png",
+        image: "images/news.jpg",
         views: 150
     },
     {
@@ -120,7 +120,7 @@ export const posts = [
         author: "Campus Blog Team",
         date: "2026-01-12",
         category: "JavaScript",
-        image: "images/image1.png",
+        image: "images/news.jpg",
         views: 280
     }
 
