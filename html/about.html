@@ -1,59 +1,71 @@
 <!DOCTYPE html>
-<html>
-   <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Campus Blog</title>
-
-  <meta name="description" content="About Campus Blog - a student blog about development, studies, and projects.">
-
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="About Campus Blog - a student campus blog about development, studies, and projects." />
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 
-    <body>
-        <header>
-           <nav class="nav">
-            <ul>
-                <li><a href="index.html"><strong>HOME</strong></a></li>
-                <li><a href="post.html"><strong>POSTS</strong></a></li>       
-                <li><a href="about.html"><strong>ABOUT</strong></a></li>         
-            </ul>
-           </nav>
-        </header>
-        <hr>
+<body>
+  <div class="frame">
+   
+    <header class="topbar">
+      <div class="logo">
+        <a href="../index.html" aria-label="Go to homepage">CampusBlog</a>
+      </div>
 
-       <main class="page">
-  <section class="content">
+      <nav aria-label="Huvudnavigation">
+        <a href="../index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="../contact.html">CONTACT</a>
+      </nav>
+    </header>
 
-    <h1>About Campus Blog</h1>
+    
+    <section class="featured" aria-hidden="true"></section>
 
-    <p>
-      This is a campus blog where our class collects and shares our work.
-      The blog is used to document projects, assignments, and lessons from our studies.
-      Its purpose is to show how we work, develop our skills, and solve problems during the program.
-      The content is course-related and focuses on practical work rather than theory.
-    </p>
+    
+    <section class="content">
+     
+      <div>
+        <h1>About Campus Blog</h1>
 
-    <figure class="team">
-      <img src="/images/teambildpahollytech (1).jpg" alt="Picture of the Campus blog team.">
-      <figcaption>Our class behind the campus blog.</figcaption>
-    </figure>
+        <p>
+          This is a campus blog where our class collects and shares our work.
+          The blog is used to document projects, assignments, and lessons from our studies.
+          Its purpose is to show how we work, develop our skills, and solve problems during the program.
+          The content is course-related and focuses on practical work rather than theory.
+        </p>
 
-    <section class="contact">
-      <h2>Contact</h2>
-      <p>
-        For more information, contact us at
-        <a href="mailto:info@campusblog.com">info@campusblog.com</a>
-      </p>
+        <h2>Contact</h2>
+        <p>
+          For more information, contact us at
+          <a href="mailto:info@campusblog.com">info@campusblog.com</a>
+        </p>
+      </div>
+
+      <aside class="sidebar" aria-label="About sidebar">
+        <div class="side-section">
+          <h2>Our Team</h2>
+
+          <figure>
+            <img
+              src="../images/teambildpahollytech (1).jpg"
+              alt="Picture of the Campus blog team"
+              style="max-width: 100%; height: auto; display: block;"
+            />
+            <figcaption>Our class behind the campus blog.</figcaption>
+          </figure>
+        </div>
+      </aside>
     </section>
+  </div>
 
-  </section>
-</main>
 
-<footer class="footer">
-  <small>© Campus Blog</small>
-</footer>
-    </body>
-
-    </html>
+  <footer class="footer">
+    <small>© Campus Blog</small>
+  </footer>
+</body>
+</html>
