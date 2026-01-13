@@ -4,26 +4,51 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inlägg | Campus Blog</title>
-  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- post.html ligger i /html, så gå upp en nivå -->
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
 
-  <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-    </nav>
+  <!-- Samma header som index/about -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Go to homepage">CampusBlog</a>
+
+      <nav class="nav" aria-label="Huvudnavigation">
+        <a class="nav-link" href="index.html">HOME</a>
+        <a class="nav-link" href="about.html">ABOUT</a>
+        <a class="nav-link" href="contact.html">CONTACT</a>
+      </nav>
+    </div>
   </header>
 
-  <main id="main-content">
-    <!-- Inlägget renderas här med JS -->
+  <!-- Main -->
+  <main class="layout">
+    <!-- Här renderar JS inlägget -->
+    <section id="main-content" aria-label="Blogginlägg"></section>
+
+    <!-- Sidebar (valfri men matchar wireframe) -->
+    <aside class="sidebar" aria-label="Sidoinformation">
+      <h2>Om Campus Blog</h2>
+      <p>Nyheter, tips och guider för dig som studerar frontend och IT.</p>
+
+      <h2>Kategorier</h2>
+      <ul>
+        <li>Study</li>
+        <li>Frontend</li>
+        <li>JavaScript</li>
+        <li>Accessibility</li>
+        <li>Git</li>
+      </ul>
+    </aside>
   </main>
 
-  <footer>
-    <p>© Campus Blog</p>
+  <footer class="site-footer">
+    <p>© 2026 Campus Blog</p>
   </footer>
 
-  <script src="js/posts.js"></script>
-  <script src="js/post.js"></script>
+  <!-- Viktigt: kör module så du kan importera posts från data.js -->
+  <script type="module" src="../javascript/post.js"></script>
 </body>
 </html>
