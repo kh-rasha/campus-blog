@@ -204,7 +204,7 @@ nav a[aria-current="page"] {
   cursor: pointer;
 }
 
-.subscribe-box button:hover { opacity: 0.92; }
+.subscribe-box button:hover { opacity: 0.50; }
 
 .side-section {
   margin-top: 14px;
