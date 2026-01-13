@@ -1,5 +1,6 @@
 // javascript/main.js
 import { posts } from "./data.js";
+console.log("main.js loaded ✅", posts);
 
 const postsSection = document.querySelector("#posts");
 
