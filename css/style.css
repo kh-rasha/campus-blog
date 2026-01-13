@@ -67,12 +67,12 @@ button, input { font: inherit; }
 }
 
 .topbar nav a:hover {
-  background: #f0f1f7;
+  background: gray;
 }
 
 nav a[aria-current="page"] {
   background: #111;
-  color: #fff;
+  color: #f6f7fb;
 }
 
 /* =========================
