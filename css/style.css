@@ -125,7 +125,7 @@ button, input { font: inherit; }
 /* =========================
    Posts
 ========================= */
-.post {
+.post-card {
   display: grid;
   grid-template-columns: 88px 1fr;
   gap: 12px;
