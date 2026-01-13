@@ -130,7 +130,7 @@ nav a[aria-current="page"] {
 /* =========================
    Posts
 ========================= */
-.post {
+.post-card {
   display: grid;
   grid-template-columns: 88px 1fr;
   gap: 12px;
@@ -163,6 +163,7 @@ nav a[aria-current="page"] {
   margin: 0;
   color: #333;
 }
+
 
 /* =========================
    Sidebar
@@ -241,6 +242,41 @@ nav a[aria-current="page"] {
     linear-gradient(45deg, transparent 49%, #c9c9d6 50%, transparent 51%),
     linear-gradient(-45deg, transparent 49%, #c9c9d6 50%, transparent 51%),
     #f6f7fb;
+}
+
+/* =========================
+   Contact
+========================= */
+.post.post--single {
+  grid-template-columns: 1fr;
+}
+
+.contact-form {
+  display: grid;
+  gap: 12px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c9c9d6;
+  border-radius: 10px;
+}
+
+.contact-form button {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #111;
+  background: #111;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
 }
 
 /* =========================
