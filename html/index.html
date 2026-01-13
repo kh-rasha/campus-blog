@@ -18,12 +18,37 @@
         <a class="nav-link is-active" href="index.html" aria-current="page">HOME</a>
         <a class="nav-link" href="about.html">ABOUT</a>
         <a class="nav-link" href="post.html">CONTACT</a>
-      </nav>    
+      </nav>
+        <main class="container">
+            <section class="featured" aria-labelledby="featured-title">
+                <div class="featured-media" aria-hidden="true"></div>
+
+                <div class="featured-content">
+                    <h1 id="featured-title" class="featured-title">FEATURED<br />POST</h1>
+                    <p class="featured-post">Our featured post1337</p>
+                   <a class="button1" href="post.html=id=1">Read more</a> 
+                </div>
+        </main>
+
+        
     </div>
   </header>
 
+  <!-- FEATURED POST -->
+  <section class="featured container" aria-labelledby="featured-title">
+    <div class="featured-media" aria-hidden="true">
+      <img src="images/placeholder-1.jpg" alt="Featured post image">
+    </div>
+
+    <div class="featured-content">
+      <h1 id="featured-title" class="featured-title">FEATURED POST</h1>
+      <p class="featured-post">How to Organize Your Week as a Fullstack Student</p>
+      <a class="button1" href="post.html?id=1">Read more</a>
+    </div>
+  </section>
+
   <!-- MAIN LAYOUT -->
-  <main class="layout">
+  <main class="layout container">
 
     <!-- BLOG POSTS LIST -->
     <section id="posts" class="posts" aria-label="Blog posts">
@@ -51,8 +76,6 @@
   </footer>
 
   <!-- JS -->
-  <script src="js/data.js"></script>
-  <script src="js/index.js"></script>
   <script type="module" src="js/main.js"></script>
 
 </body>
