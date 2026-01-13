@@ -1,54 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inlägg | Campus Blog</title>
-
-  <!-- post.html ligger i /html, så gå upp en nivå -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Post | Campus Blog</title>
   <link rel="stylesheet" href="../css/style.css" />
 </head>
+
 <body>
+  <div class="frame">
 
-  <!-- Samma header som index/about -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html" aria-label="Go to homepage">CampusBlog</a>
-
-      <nav class="nav" aria-label="Huvudnavigation">
-        <a class="nav-link" href="index.html">HOME</a>
-        <a class="nav-link" href="about.html">ABOUT</a>
-        <a class="nav-link" href="contact.html">CONTACT</a>
+    <!-- HEADER -->
+    <header class="topbar">
+      <div class="logo">LOGO</div>
+      <nav aria-label="Huvudnavigation">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <!-- Main -->
-  <main class="layout">
-    <!-- Här renderar JS inlägget -->
-    <section id="main-content" aria-label="Blogginlägg"></section>
+    <!-- FEATURED -->
+    <section class="featured" aria-label="Post header">
+      <div class="xbox" aria-hidden="true"></div>
+      <div class="featured-text">
+        <h1>POST</h1>
+        <p>Read the full article</p>
+      </div>
+    </section>
 
-    <!-- Sidebar (valfri men matchar wireframe) -->
-    <aside class="sidebar" aria-label="Sidoinformation">
-      <h2>Om Campus Blog</h2>
-      <p>Nyheter, tips och guider för dig som studerar frontend och IT.</p>
+    <!-- MAIN CONTENT -->
+    <section class="content">
 
-      <h2>Kategorier</h2>
-      <ul>
-        <li>Study</li>
-        <li>Frontend</li>
-        <li>JavaScript</li>
-        <li>Accessibility</li>
-        <li>Git</li>
-      </ul>
-    </aside>
-  </main>
+      <!-- LEFT COLUMN: post content -->
+      <div>
+        <h2 class="section-title">FULL POST</h2>
 
-  <footer class="site-footer">
-    <p>© 2026 Campus Blog</p>
-  </footer>
+        <!-- Här fyller JS inlägget -->
+        <div id="main-content" aria-label="Blogginlägg"></div>
+      </div>
 
-  <!-- Viktigt: kör module så du kan importera posts från data.js -->
+      <!-- SIDEBAR -->
+      <aside class="sidebar" aria-label="Sidebar">
+
+        <div class="side-section">
+          <h2>ABOUT</h2>
+          <p>Campus Blog is a student project about development, studies and teamwork.</p>
+        </div>
+
+        <div class="side-section">
+          <h2>CATEGORIES</h2>
+          <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+
+        <div class="side-section">
+          <h2>POPULAR POSTS</h2>
+          <div class="popular" id="popular-posts">
+            <!-- valfritt: fyll med JS -->
+          </div>
+        </div>
+
+      </aside>
+    </section>
+  </div>
+
   <script type="module" src="../javascript/post.js"></script>
 </body>
 </html>

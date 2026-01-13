@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Campus Blog</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+
+  <div class="frame">
+
+    <!-- HEADER -->
+    <header class="topbar">
+      <div class="logo">CampusBlog</div>
+      <nav aria-label="Huvudnavigation">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html" aria-current="page">CONTACT</a>
+      </nav>
+    </header>
+
+    <!-- FEATURED (enkel variant för contact) -->
+    <section class="featured" aria-label="Contact header">
+      <div class="featured-text">
+        <h1>CONTACT</h1>
+        <p>Get in touch with the Campus Blog team</p>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="content">
+
+      <!-- LEFT COLUMN -->
+      <div>
+        <h2 class="section-title">SEND US A MESSAGE</h2>
+
+        <article class="post">
+          <div>
+            <form class="contact-form" novalidate>
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required />
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+
+              <button type="submit">SEND</button>
+            </form>
+          </div>
+        </article>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar" aria-label="Sidebar">
+
+        <div class="side-section">
+          <h2>CONTACT INFO</h2>
+          <p>
+            Email:<br />
+            <a href="mailto:info@campusblog.com">info@campusblog.com</a>
+          </p>
+        </div>
+
+        <div class="side-section">
+          <h2>ABOUT</h2>
+          <p>
+            Campus Blog is a student project where we share assignments,
+            projects, and learning experiences.
+          </p>
+        </div>
+
+      </aside>
+
+    </section>
+
+  </div>
+
+</body>
+</html>
