@@ -7,18 +7,54 @@
         <link rel="stylesheet" href="css/style.css"/>
     </head>
 
+    <script type="module" src="js/main.js"></script>
+
     <body>
-        <header class="site-header">
-            <div class="container header-inner">
-                <a class="logo" href="index.html" aria-label="Go to homepage">CampusBlog</a>
 
-            <nav class="nav" aria-label="Huvudnavigation">
-                <a class="nav-link is-active" href="index.html" aria-current="page">HOME</a>
-                <a class="nav-link" href="about.html">ABOUT</a>
-                <a class="nav-link" href="contact.html">CONTACT</a>
-            </nav>
+  <!-- HEADER + NAVIGATION -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Go to homepage">CampusBlog</a>
 
-            </div>
-        </header>
-    </body>
+      <nav class="nav" aria-label="Huvudnavigation">
+        <a class="nav-link is-active" href="index.html" aria-current="page">HOME</a>
+        <a class="nav-link" href="about.html">ABOUT</a>
+        <a class="nav-link" href="contact.html">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN LAYOUT -->
+  <main class="layout">
+
+    <!-- BLOG INLÄGGS-LISTA -->
+    <section id="posts" class="posts" aria-label="Blogginlägg">
+      <!-- JavaScript fyller inlägg här -->
+    </section>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" aria-label="Sidoinformation">
+      <h2>Om Campus Blog</h2>
+      <p>Nyheter, tips och guider för dig som studerar frontend och IT.</p>
+
+      <h2>Kategorier</h2>
+      <ul>
+        <li>Studieteknik</li>
+        <li>Frontend</li>
+        <li>Event</li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2026 Campus Blog</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/data.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
 </html>
