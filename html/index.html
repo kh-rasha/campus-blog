@@ -1,70 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Campus Blog - Home</title>
-  <link rel="stylesheet" href="../css/style.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog Template</title>
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
-
 <body>
 
-  <!-- HEADER + NAVIGATION -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html" aria-label="Go to homepage">CampusBlog</a>
-
-      <nav class="nav" aria-label="Main navigation">
-        <a class="nav-link is-active" href="index.html" aria-current="page">HOME</a>
-        <a class="nav-link" href="about.html">ABOUT</a>
-        <a class="nav-link" href="contact.html">CONTACT</a>
+  <div class="frame">
+    <!-- HEADER -->
+    <header class="topbar">
+      <div class="logo">LOGO</div>
+      <nav aria-label="Huvudnavigation">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT</a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <!-- FEATURED POST -->
-  <section class="featured container" aria-labelledby="featured-title">
-    <div class="featured-media" aria-hidden="true">
-      <img src="images/placeholder-1.jpg" alt="Featured post image">
-    </div>
+    <!-- FEATURED -->
+    <section class="featured" aria-label="Featured post">
+      <div class="xbox" aria-hidden="true"></div>
 
-    <div class="featured-content">
-      <h1 id="featured-title" class="featured-title">FEATURED POST</h1>
-      <p class="featured-post">How to Organize Your Week as a Fullstack Student</p>
-      <a class="button1" href="post.html?id=1">Read more</a>
-    </div>
-  </section>
-
-  <!-- MAIN LAYOUT -->
-  <main class="layout container">
-
-    <!-- BLOG POSTS LIST -->
-    <section id="posts" class="posts" aria-label="Blog posts">
-      <!-- JavaScript will populate posts here -->
+      <div class="featured-text">
+        <h1>FEATURED<br>POST</h1>
+        <p>TEXT.</p>
+      </div>
     </section>
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar" aria-label="Sidebar information">
-      <h2>About Campus Blog</h2>
-      <p>News, tips, and guides for students interested in frontend and IT.</p>
+    <!-- MAIN CONTENT -->
+    <section class="content">
 
-      <h2>Categories</h2>
-      <ul>
-        <li>Study Techniques</li>
-        <li>Frontend</li>
-        <li>Events</li>
-      </ul>
-    </aside>
+      <!-- LEFT COLUMN -->
+      <div>
+        <h2 class="section-title">RECENT POSTS</h2>
 
-  </main>
+        <article class="post">
+          <div class="thumb" aria-hidden="true"></div>
+          <div>
+            <h3>POST TITLE</h3>
+            <p>TEXT.</p>
+          </div>
+        </article>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <p>© 2026 Campus Blog</p>
-  </footer>
+        <article class="post">
+          <div class="thumb" aria-hidden="true"></div>
+          <div>
+            <h3>POST TITLE</h3>
+            <p>TEXT.</p>
+          </div>
+        </article>
 
-  <!-- JS -->
-  <script type="module" src="js/main.js"></script>
+        <article class="post">
+          <div class="thumb" aria-hidden="true"></div>
+          <div>
+            <h3>POST TITLE</h3>
+            <p>TEXT.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar" aria-label="Sidebar">
+
+        <div class="subscribe-box">
+          <h2>SUBSCRIBE</h2>
+          <input type="email" aria-label="Email">
+          <button>SUBSCRIBE</button>
+        </div>
+
+        <div class="side-section">
+          <h2>CATEGORIES</h2>
+          <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+
+        <div class="side-section">
+          <h2>POPULAR POSTS</h2>
+
+          <div class="popular">
+            <div class="pop-item">
+              <div class="mini" aria-hidden="true"></div>
+              <span>POST TITLE</span>
+            </div>
+
+            <div class="pop-item">
+              <div class="mini" aria-hidden="true"></div>
+              <span>POST TITLE</span>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+    </section>
+  </div>
 
 </body>
 </html>
