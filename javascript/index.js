@@ -1,5 +1,6 @@
 // javascript/index.js
-import { posts } from "./data.js";
+import { getPosts } from "./storage.js";
+const posts = getPosts();
 
 /* ---------- Featured Post ---------- */
 const featuredTitle = document.getElementById("featuredTitle");

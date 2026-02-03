@@ -1,5 +1,6 @@
 // javascript/post.js
-import { posts } from "./data.js";
+import { getPosts } from "./storage.js";
+const posts = getPosts();
 
 const main = document.getElementById("main-content");
 if (!main) throw new Error('Missing element with id="main-content" in post.html');

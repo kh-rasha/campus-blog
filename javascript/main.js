@@ -1,5 +1,6 @@
 // javascript/main.js
-import { posts } from "./data.js";
+import { getPosts } from "./storage.js";
+const posts = getPosts();
 
 const postsSection = document.querySelector("#posts");
 
