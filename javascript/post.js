@@ -33,7 +33,7 @@ if (!postId) {
 
     main.innerHTML = `
       <article class="post post--single">
-        <img src="${imageSrc}" alt="Image for ${post.title}" />
+        <img src="${imageSrc}" loading="lazy" alt="Image for ${post.title}" />
 
         <div>
           <p><strong>${post.author}</strong> • <time datetime="${post.date}">${post.date}</time> • ${post.category}</p>

@@ -39,6 +39,7 @@ postsSection.innerHTML = sortedPosts
           class="thumb"
           src="../${post.image}"
           alt="${post.title}"
+          loading="lazy"
         />
 
         <div>
