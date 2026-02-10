@@ -1,0 +1,15 @@
+{
+  "name": "NOOOGA Blog",
+  "short_name": "NOOOGA",
+  "start_url": "/html/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
