@@ -31,19 +31,25 @@ if (!postId) {
     const imageSrc = post.image.startsWith("../") ? post.image : `../${post.image}`;
     document.title = `${post.title} - Campus Blog`;
 
+
+
+    // Example of responsive image setup if multiple sizes exist:
+// <img
+//   src="../images/news-800.jpg"
+//   srcset="
+//     ../images/news-400.jpg 400w,
+//     ../images/news-800.jpg 800w,
+//     ../images/news-1600.jpg 1600w
+//   "
+//   sizes="(max-width: 600px) 90vw, 800px"
+//   alt="Responsive blog image"
+// />
     main.innerHTML = `
       <article class="post post--single">
-      
-        <img
-          src="../${post.image.medium}"
-          srcset="
-          ../${post.image.small} 400w,
-          ../${post.image.medium} 800w,
-         ../${post.image.large} 1600w
-          "
-         sizes="(max-width: 600px) 90vw, 800px"
-         alt="Image for ${post.title}"
-        />
+
+
+      <img src="${imageSrc}" alt="Image for ${post.title}" />
+        
 
         <div>
           <p><strong>${post.author}</strong> • <time datetime="${post.date}">${post.date}</time> • ${post.category}</p>

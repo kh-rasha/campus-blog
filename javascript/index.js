@@ -31,23 +31,24 @@ if (!postsSection) {
 // Sort posts by date (newest first) for recent list
 const sortedPosts = [...posts].sort((a, b) => new Date(b.date) - new Date(a.date));
 
+
+
+
+// Images could be extended with srcset/sizes if multiple resolutions are generated from one original image.
 postsSection.innerHTML = sortedPosts
     .map(
         (post) => `
       <article class="post-card">
 
+
+
+
       <img
-          class="thumb"
-          src="../${post.image.medium}"
-          srcset="
-         ../${post.image.small} 400w,
-         ../${post.image.medium} 800w,
-          ../${post.image.large} 1600w
-        "
-        sizes="(max-width: 600px) 90vw, 800px"
-        alt="${post.title}"
-        loading="lazy"
-      />
+  class="thumb"
+  src="../${post.image}"
+  alt="${post.title}"
+  loading="lazy"
+/>
 
 
         <div>
