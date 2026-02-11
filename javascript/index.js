@@ -35,12 +35,20 @@ postsSection.innerHTML = sortedPosts
     .map(
         (post) => `
       <article class="post-card">
-        <img
+
+      <img
           class="thumb"
-          src="../${post.image}"
-          alt="${post.title}"
-          loading="lazy"
-        />
+          src="../${post.image.medium}"
+          srcset="
+         ../${post.image.small} 400w,
+         ../${post.image.medium} 800w,
+          ../${post.image.large} 1600w
+        "
+        sizes="(max-width: 600px) 90vw, 800px"
+        alt="${post.title}"
+        loading="lazy"
+      />
+
 
         <div>
           <h3>${post.title}</h3>

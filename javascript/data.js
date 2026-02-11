@@ -16,7 +16,11 @@ export const posts = [
         author: "Campus Blog Team",
         date: "2026-01-05",
         category: "Study",
-        image: "images/news.jpg",
+        image: {
+            small: "images/post1-400.jpg",
+            medium: "images/post1-800.jpg",
+            large: "images/post1-1600.jpg"
+            },
         views: 220
     },
     {
